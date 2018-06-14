@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+    <ul>
+          {% for student in students %}
+          <li>
+             id:{{ student.id }}, 姓名：{{ student.user_name }}, 密码: {{ student.password }}
+         </li>
+         {% endfor %}
+     </ul>
+</body>
+</html>
